@@ -1,5 +1,4 @@
-import "../component/movie-detail.js"
-import $ from "jquery/dist/jquery.min.js";
+import * as $ from 'jquery'
 import DataSource from "../resource/data-source.js";
 import Category from "./category.js";
 
@@ -26,12 +25,11 @@ const main = () => {
         dataSourceFunc: DataSource.topRatedMovies
     })
     topRated.getData();
-
+    
     document.getElementById('myButton').addEventListener('click', function(event) {
         console.log($("#exampleModal"));
         $("#exampleModal").modal('show');
     });
-
 }
 
 export default main;
