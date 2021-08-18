@@ -28,7 +28,6 @@ const main = () => {
     topRated.getData();
 
     document.getElementById('myButton').addEventListener('click', function(event) {
-        /** BootstrapModal is located in the global scope thanks to expose-loader **/
         console.log($("#exampleModal"));
         $("#exampleModal").modal('show');
     });

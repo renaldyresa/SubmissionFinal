@@ -12,7 +12,6 @@
   "dependencies": {
     "@popperjs/core": "^2.9.3",
     "bootstrap": "^5.1.0",
-    "carosans": "^3.0.0-alpha",
     "jquery": "^3.6.0",
     "popper.js": "^1.14.3"
   },
