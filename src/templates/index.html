@@ -8,44 +8,16 @@
     <app-bar></app-bar>
 </header>
 <main>
-    <movie-category class="popular"></movie-category>
-    <movie-category class="now-playing"></movie-category>
-    <movie-category class="top-rated"></movie-category>
-    <!-- <movie-detail></movie-detail> -->
-    <button id="myButton" class="btn btn-danger">
-      Open Bootstrap Modal (programmatically)
-    </button>
-  
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p> Here comes the content.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
+    <div id="message" class="alert alert-primary">
+        A simple primary alert—check it out!
     </div>
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <script>
-      /** Open modal programmatically **/
-      document.addEventListener("DOMContentLoaded", function(event) {
-    document.getElementById('myButton').addEventListener('click', function(event) {
-      /** BootstrapModal is located in the global scope thanks to expose-loader **/
-      console.log($("#exampleModal"));
-      $("#exampleModal").modal('show');
-    });
-  }); -->
-    </script>
+    <movie-search></movie-search>
+    <div id="movies-category">
+        <movie-category class="popular"></movie-category>
+        <movie-category class="now-playing"></movie-category>
+        <movie-category class="top-rated"></movie-category>
+    </div>
+    <movie-detail></movie-detail>
 </main>
 </body>
 </html>

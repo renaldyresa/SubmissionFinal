@@ -32,6 +32,12 @@ app-bar .navbar{
     box-shadow: 0 4px 8px 0 tan;
 }
 
+movie-search {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
 movie-category {
     display: block;
     padding: 10px;
@@ -44,17 +50,16 @@ movie-category h3 {
 .container-cards {
     padding-top: 10px;
     margin: 5px;
-    height: 90%;
     overflow-y: hidden;
     direction: ltr;
     scrollbar-color: #d4aa70 #e4e4e4;
     scrollbar-width: thin;
 }
 
-.container-cards :hover{
+/* .container-cards :hover{
     transform: translateY(-5px);
     box-shadow: none;
-}
+} */
 
 .container-cards::-webkit-scrollbar {
     width: 10px;
@@ -84,7 +89,18 @@ movie-category h3 {
 	border-radius: 10px;
 }
 
+.card-block :hover {
+    transform: translateY(-5px);
+    box-shadow: none;
+}
+
 .poster {
     height: auto;
     width: 80%;
+}
+
+.poster-detail {
+    float: left;
+    width: 200px;
+    padding-right: 10px;
 }

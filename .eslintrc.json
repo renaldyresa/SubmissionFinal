@@ -1,0 +1,21 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "ignorePatterns": ["webpack.common.js", "webpack.dev.js", "webpack.prod.js", "dist/*"],
+    "parser":"babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "no-underscore-dangle": 0
+    }
+}

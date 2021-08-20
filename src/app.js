@@ -1,12 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/style.css';
-import 'popper.js';
-import 'bootstrap';
-import "./scripts/component/app-bar.js";
-import main from "./scripts/view/main.js";
+import 'jquery';
+import '@popperjs/core';
+import './scripts/component/movie-search';
+import './scripts/component/app-bar';
+import main from './scripts/view/main';
 
-
-document.addEventListener("DOMContentLoaded", main);
-document.addEventListener("DOMContentLoaded", ()=> {
-    
-})
+document.addEventListener('DOMContentLoaded', main);
